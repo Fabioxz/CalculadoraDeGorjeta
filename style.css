@@ -112,7 +112,7 @@ color: #a0122f;
 }
 
 .resultados {
-    background-color: #4d0715;
+    background-color: #300b12;
     border-radius: 0.9375rem;
     padding: 1.5rem;
 }
@@ -147,10 +147,10 @@ color: #a0122f;
 
 .resultados button {
     width: 100%;
-    background-color: #420101;
+    background-color: #b10628;
     border: none;
     border-radius: 0.3125rem;
-    color: #a3132e;
+    color: #300b12;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -158,6 +158,20 @@ color: #a0122f;
 }
 
 @media(min-width: 920px) {
+
+    body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    justify-content: flex-start;
+    gap: 5rem;
+    padding-top: 4rem;
+    }
+
+    header {
+        padding: 0;
+    }
+
     main {
         display: flex;
         gap: 3rem;
@@ -171,7 +185,24 @@ color: #a0122f;
         width: 100%;
     }
 
+    .conta input::-webkit-inner-spin-button,
+    .pessoas input::-webkit-inner-spin-button {
+        display: none;
+    }
+
     .gorjeta div {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .resultados {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 2.5rem;
+    }
+
+    .resultados div > strong {
+        font-size: 3rem;
     }
 }
