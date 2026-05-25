@@ -31,7 +31,8 @@ main {
     padding: 2rem;
 }
 
-.conta {
+.conta,
+.gorjeta {
     margin-bottom: 2rem;
 }
 
@@ -66,7 +67,7 @@ main {
 }
 
 .conta:has(input:focus) div {
-    outline: 2px solid #015e4e;
+    outline: 2px solid #420101;
 }
 
 .gorjeta div {
@@ -78,6 +79,23 @@ main {
     gap: 1rem;
 }
 
+.gorjeta input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem;
+    background-color: #4d0715;
+    color: white;
+}
+
 .gorjeta #outra {
     width: 100%;
+    background-color: #160105;
+}
+
+.gorjeta #outra::placeholder {
+color: #3a0d16;
 }
